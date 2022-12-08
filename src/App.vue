@@ -1,26 +1,38 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Welcome to Your Vue.js App" />
+  <student />
+  <show-student />
+  <button @click="buttons">hahaha</button>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
-
+// import HelloWorld from "./components/HelloWorld.vue";
+// import StudenManagmentVue from "./components/StudenManagment.vue";
+import ShowStudentVue from "./components/ShowStudent.vue";
 export default {
   name: "App",
   components: {
-    HelloWorld,
+    // HelloWorld,
+    // Student: StudenManagmentVue,
+    ShowStudent: ShowStudentVue,
+  },
+
+  data() {
+    return {};
+  },
+  methods: {
+    buttons() {},
   },
 };
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* height: 1000px; */
+}
+body {
+  height: 1000px;
 }
 </style>
